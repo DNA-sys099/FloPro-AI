@@ -1,0 +1,289 @@
+.content-studio {
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.studio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.studio-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-actions button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.save-draft {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color) !important;
+}
+
+.publish {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+}
+
+/* Creation Area */
+.creation-area {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.platform-selector,
+.content-type-selector {
+  margin-bottom: 2rem;
+}
+
+.platform-buttons,
+.type-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.platform-btn,
+.type-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-background);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.platform-btn:hover,
+.type-btn:hover {
+  border-color: var(--secondary-color);
+}
+
+.platform-btn.active,
+.type-btn.active {
+  background-color: var(--secondary-color);
+  color: white;
+  border-color: var(--secondary-color);
+}
+
+.content-editor {
+  margin-top: 2rem;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ai-assist {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.media-uploader {
+  margin-bottom: 1.5rem;
+}
+
+.upload-area {
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: var(--secondary-color);
+  background-color: rgba(9, 132, 227, 0.05);
+}
+
+.upload-area i {
+  font-size: 2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.file-types {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.text-editor {
+  position: relative;
+}
+
+.content-textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.editor-tools {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.editor-tools button {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.editor-tools button:hover {
+  background-color: var(--background-color);
+}
+
+/* Preview Area */
+.preview-area {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.preview-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.preview-platform {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.preview-platform:hover {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.preview-frame {
+  aspect-ratio: 1;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.performance-prediction {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.prediction-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metric-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.metric-value {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+/* Scheduling Options */
+.scheduling-options {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.schedule-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-background);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.schedule-btn:hover {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}

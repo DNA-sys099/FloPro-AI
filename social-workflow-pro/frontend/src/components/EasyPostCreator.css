@@ -1,0 +1,174 @@
+.easy-post-creator {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Big Button Grid */
+.big-button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.big-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.big-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.big-button img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 15px;
+}
+
+.big-button span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Content Creator */
+.content-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upload-button {
+  width: 100%;
+  padding: 40px;
+  border: 3px dashed #ddd;
+  border-radius: 20px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-button:hover {
+  border-color: #999;
+  background: #f0f0f0;
+}
+
+.ai-helper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.ai-helper img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.big-text-input {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  resize: none;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.back-button,
+.next-button,
+.finish-button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.next-button,
+.finish-button {
+  background: #4834d4;
+  color: white;
+}
+
+.back-button:hover,
+.next-button:hover,
+.finish-button:hover {
+  transform: scale(1.05);
+}
+
+/* Timing Options */
+.timing-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timing-button {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timing-button:hover {
+  border-color: #4834d4;
+  background: #f8f7ff;
+}
+
+.timing-button img {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+
+.timing-button span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
